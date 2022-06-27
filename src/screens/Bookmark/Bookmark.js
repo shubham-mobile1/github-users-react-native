@@ -10,7 +10,7 @@ export default function Bookmark({users}) {
         return item.id.toString();
       }}
       renderItem={({item, index}) => {
-        return <ListTile imageURl={item.avatar_url} name={item.login} />;
+        return <ListTile item={item} />;
       }}
     />
   );
